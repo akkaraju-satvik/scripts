@@ -25,3 +25,8 @@ cd ~/scripts
 
 gitCommitAndPush scripts $1
 
+echo "SYNCING DOTFILES..."
+cd ~/dotfiles
+
+gitCommitAndPush dotfiles $1
+

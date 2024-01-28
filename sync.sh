@@ -4,17 +4,19 @@ gitCommitAndPush() {
     git add .
     git commit -m "synced changes at $(date +%F_%R)"
     git push
+  else
+    echo "No changes to sync in $1"
   fi
 }
 
 echo "SYNCING NOTES..."
 cd ~/notes
 
-gitCommitAndPush
+gitCommitAndPush notes
 
 echo "SYNCING SCRIPTS..."
 cd ~/scripts
 
-gitCommitAndPush
+gitCommitAndPush scripts
 
 

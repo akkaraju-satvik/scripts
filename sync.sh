@@ -19,4 +19,3 @@ cd ~/scripts
 
 gitCommitAndPush scripts
 
-

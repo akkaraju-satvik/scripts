@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(docker ps -a --format '{{.Names}}') ]]; then
+if [[ $(docker ps --format '{{.Names}}') ]]; then
   docker stop $(docker ps --format '{{.Names}}')
 else
   echo "No containers running at the moment!"

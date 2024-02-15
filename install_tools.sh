@@ -23,3 +23,8 @@ go version
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 
+# GET ALL PERSONAL SCRIPTS
+git clone git@github.com:akkaraju-satvik/notes.git
+git clone git@github.com:akkaraju-satvik/scripts.git
+git clone git@github.com:akkaraju-satvik/dotfiles.git
+

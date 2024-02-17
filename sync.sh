@@ -12,6 +12,8 @@ gitCommitAndPush() {
     git push
   else
     echo "No changes to sync in $1"
+    echo "Pushing any unpushed commits..."
+    git push
   fi
 }
 

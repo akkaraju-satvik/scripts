@@ -28,6 +28,7 @@ cd ~/scripts
 gitCommitAndPush scripts $1
 
 echo "SYNCING DOTFILES..."
+cp /home/satvik/.bashrc /home/satvik/dotfiles/.bashrc && cp /home/satvik/.vimrc /home/satvik/dotfiles/.vimrc
 cd ~/dotfiles
 
 gitCommitAndPush dotfiles $1

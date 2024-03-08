@@ -20,9 +20,9 @@ gitCommitAndPush() {
 echo "SYNCING NOTES..."
 cd ~/notes
 
-ansible-vault encrypt *.txt --vault-pass-file ~/.ansible-pass-file
+ansible-vault encrypt *.txt --vault-pass-file ~/.ansible-vault-pass
 gitCommitAndPush notes $1
-ansible-vault decrypt *.txt --vault-pass-file ~/.ansible-pass-file
+ansible-vault decrypt *.txt --vault-pass-file ~/.ansible-vault-pass
 
 echo "SYNCING SCRIPTS..."
 cd ~/scripts

@@ -20,6 +20,9 @@ export PATH=$PATH:/usr/local/go/bin
 go version
 
 # ANSIBLE
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
 pipx install --include-deps ansible
 
 # RUST

@@ -19,11 +19,14 @@ sudo tar -C /usr/local -xzf ~/go.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 go version
 
+# ANSIBLE
+pipx install --include-deps ansible
+
 # RUST
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 
-# GET ALL PERSONAL SCRIPTS
+# GET ALL PERSONAL REPOS
 git clone git@github.com:akkaraju-satvik/notes.git
 git clone git@github.com:akkaraju-satvik/scripts.git
 git clone git@github.com:akkaraju-satvik/dotfiles.git

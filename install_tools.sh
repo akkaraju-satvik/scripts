@@ -34,3 +34,5 @@ git clone git@github.com:akkaraju-satvik/notes.git
 git clone git@github.com:akkaraju-satvik/scripts.git
 git clone git@github.com:akkaraju-satvik/dotfiles.git
 
+# SCREENKEY
+sudo apt-get install screenkey
